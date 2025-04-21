@@ -32,30 +32,26 @@ const eventSchema = new mongoose.Schema({
         type: [String],
         required: true,
     },
-    guestImage:{
+    guestImages:{
         type: [String],
         required: true,
     },
     collaborators:{
         type: [String],
-        required: true,
     },
     collaboratorsDetails:{
         type: [String],
-        required: true,
     },
     collaboratorsImages:{
         type:[String],
     },
     sponsors:{
         type: [String],
-        required: true,
     },
     sponsorsDetails:{
         type:[String],
-        required: true,
     },
-    sponsorsImage:{
+    sponsorsImages:{
         type: [String],
     },
     regQR:{

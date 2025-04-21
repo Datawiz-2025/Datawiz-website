@@ -18,7 +18,6 @@ export default function AdminPage(){
                     <li><button className="px-4 py-2 rounded-lg border border-white"><Link href={"/admin/addImage"}>Add Images</Link></button></li>
                     <li><button className="px-4 py-2 rounded-lg border border-white"><Link href={"/admin/addProjects"}>Add Projects</Link></button></li>
                     <li><button className="px-4 py-2 rounded-lg border border-white"><Link href={"/admin/team"}>Team</Link></button></li>
-
                 </ul>
             </div>
         </div>
