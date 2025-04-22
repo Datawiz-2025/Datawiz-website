@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 const gallerySchema = new mongoose.Schema({
-    evenetName: {
+    eventName: {
         type: String,
         required: true,
     },

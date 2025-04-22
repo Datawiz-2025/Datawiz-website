@@ -1,6 +1,6 @@
-import mongoose from 'mongoose'
+import mongoose, {Schema, models, model } from 'mongoose';
 
-const eventSchema = new mongoose.Schema({
+const eventSchema = new Schema({
     name:{
         type: String,
         required: true
@@ -67,5 +67,5 @@ const eventSchema = new mongoose.Schema({
 });
 
 
-const Event = mongoose.models.Event || mongoose.model('Event', eventSchema);
+const Event = models.Event || model('Event', eventSchema);
 export default Event;

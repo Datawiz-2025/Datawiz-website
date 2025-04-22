@@ -1,5 +1,6 @@
 import { SignOutButton } from "@clerk/nextjs";
 import Link from "next/link";
+import mongoose from "mongoose";
 
 export default function AdminPage(){
     return (

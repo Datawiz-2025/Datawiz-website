@@ -1,6 +1,8 @@
 "use server"
 
-import { addEvent } from "@/utils/dbMethods/eventMethods";
+import { addEvent } from "@/utils/dbMethods/dbMethods";
+
+
 
 export type Error = {
     name?: string,
