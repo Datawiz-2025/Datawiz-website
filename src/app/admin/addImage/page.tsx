@@ -31,7 +31,7 @@ export default function AddImage(){
                     <input className="border border-white px-4 py-2 rounded-lg w-full" type="file" onChange={(e) => handleMultipleFileChange(e, setImages)} multiple id="images"/>
                     <input type="hidden" value={JSON.stringify(images)} name="images" />
                     {
-                        state?.errors.images && <p className="text-red-500">{state.errors.images}</p>
+                        images.length == 0 && state?.errors.images && <p className="text-red-500">{state.errors.images}</p>
                     }
                 </div>
                 <button className="bg-blue-500 disabled:bg-gray-700 px-4 py-2 w-full rounded-lg" disabled={isPending}>Submit</button>

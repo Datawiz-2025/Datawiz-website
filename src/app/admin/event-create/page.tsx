@@ -70,7 +70,7 @@ export default function AddEvent(){
                     <input className="border border-white px-4 py-2 rounded-lg w-full" type="file" onChange={(e) => handleFileChange(e, setEventImage)}/>
                     <input type="hidden" value={JSON.stringify(eventmage)} name="eventImage" />
                     {
-                        state?.errors?.eventImage && <p className="text-red-500">{state.errors.eventImage}</p>
+                        eventmage == "" && state?.errors?.eventImage && <p className="text-red-500">{state.errors.eventImage}</p>
                     }
                 </div>
                 <div className="w-full flex flex-col gap-2 justify-center items-start">
@@ -98,7 +98,7 @@ export default function AddEvent(){
                     <input type="hidden" value={JSON.stringify(guestImages)} name="guestImages" />
 
                     {
-                        state?.errors?.guestImages && <p className="text-red-500">{state.errors.guestImages}</p>
+                        guestImages.length == 0 && state?.errors?.guestImages && <p className="text-red-500">{state.errors.guestImages}</p>
                     }
                 </div>
                 <div className="w-full flex flex-col gap-2 justify-center items-start">
