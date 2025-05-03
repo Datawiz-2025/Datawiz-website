@@ -1,14 +1,16 @@
+import Feedback from "@/components/Feedback";
 import { connectDB } from "../database/db";
 export default async function Home() {
-  try{
+  try {
     await connectDB();
     console.log("Database connected successfuly");
-  }catch(err){
+  } catch (err) {
     console.log("Error connecting database: ", err);
   }
   return (
     <div>
       <p>Hello world</p>
+      <Feedback />
     </div>
   );
 }

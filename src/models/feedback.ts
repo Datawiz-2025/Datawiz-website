@@ -1,10 +1,11 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
 const feedbackSchema = new mongoose.Schema({
-    message: {
-        type: String
-    }
+  message: {
+    type: String,
+  },
 });
 
-const Feedback = mongoose.models.Feedback || mongoose.model("Feedback", feedbackSchema);
+const Feedback =
+  mongoose.models.Feedback || mongoose.model("Feedback", feedbackSchema);
 export default Feedback;

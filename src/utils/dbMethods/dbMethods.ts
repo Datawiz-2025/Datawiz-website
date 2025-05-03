@@ -1,4 +1,5 @@
 import Event from "@/models/events";
+import Feedback from "@/models/feedback";
 import Gallery from "@/models/gallery";
 import Person from "@/models/person";
 import Project from "@/models/project";
@@ -108,4 +109,12 @@ export async function getProjects() {
 
 export async function getProject(id: number) {
   return await Project.findOne({ _id: new mongoose.Types.ObjectId(id) });
+}
+
+export async function addFeedback(message: string) {
+  return await Feedback.create({ message });
+}
+
+export async function getFeedbacks() {
+  return await Feedback.find();
 }
